@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuesday Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='atschedule.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Tuesday’s Schedule</h1>
+        
+        <div class="teacher-section">
+            <img src="{{ url_for('static', filename='Apeksha-Koul.webp') }}" alt="Apeksha Koul" class="teacher-image">
+            <div class="teacher-info">
+                <h2>Apeksha Koul</h2>
+            </div>
+        </div>
+
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Class Location</th>
+                    <th>Timing</th>
+                    <th>Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M Block Section A</td>
+                    <td>8:30AM - 9:25AM</td>
+                    <td><input type="checkbox" id="attendance1" class="attendance-checkbox">
+                        <label for="attendance1" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td>CSET101: G15,(L):<br> {P-CC-017}</td>
+                    <td>10:40AM - 11:35 AM</td>
+                    <td>
+                        <input type="checkbox" id="attendance2" class="attendance-checkbox">
+                        <label for="attendance2" class="attendance-button"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>M Block Section A</td>
+                    <td>11:40AM - 1:30PM</td>
+                    <td><input type="checkbox" id="attendance3" class="attendance-checkbox">
+                        <label for="attendance3" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td>CSET101: B71,(T):<br> {309-PCA(60)}</td>
+                    <td>1:35 PM - 2:30 PM</td>
+                    <td>
+                        <input type="checkbox" id="attendance4" class="attendance-checkbox">
+                        <label for="attendance4" class="attendance-button"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>M Block Section A</td>
+                    <td>2:40PM - 5:35PM</td>
+                    <td><input type="checkbox" id="attendance5" class="attendance-checkbox">
+                        <label for="attendance5" class="attendance-button"></label></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

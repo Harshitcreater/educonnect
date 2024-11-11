@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <img src="{{ url_for('static', filename='images/bennett logo.png') }}" alt="Login Icon">
+        
+        <!-- Username and Password input fields -->
+        <form action="/login" method="post">
+            <input type="text" name="username" class="input-field" placeholder="Username" required>
+            <input type="password" name="password" class="input-field" placeholder="Password" required>
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+    </div>
+</body>
+</html>
